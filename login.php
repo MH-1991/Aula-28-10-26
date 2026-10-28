@@ -10,18 +10,23 @@
         <input name="username" type="text" required>
         <br><br>
         <label for="password">Senha:</label><br>
-        <textarea name="password" type="password" required></textarea>
+        <input name="password" type="password" required>
         <br><br>
         <input type="submit" value="Entrar">
     </form>
 
     <?php
-    if(isset($_POST['usernamne'])){
+    if(isset($_POST['username'])){
         $username = $_POST['username'];
         $password = $_POST['password'];
 
-        if($username == 'admin' && $password =='123')
-            elseif(login efetuado com sucesso)
+        if($username == 'admin' && $password =='123'){
+            echo "login efetuado com sucesso!";
+        }
+        else{
+            echo "Login Incorreto";
+        }
     }
+    ?>
 </body>
 </html>
