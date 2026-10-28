@@ -5,17 +5,18 @@
     <title>login</title>
 </head>
 <body>
-    <form action="processa_feedback.php" method="post">
+    <form action="#" method="post">
         <label for="username">Nome de usuario:</label>
         <input name="username" type="text" required>
         <br><br>
         <label for="password">Senha:</label><br>
-        <textarea name="password" rows="4" required></textarea>
+        <textarea name="password" type="password" required></textarea>
         <br><br>
         <input type="submit" value="Entrar">
     </form>
 
-    <?phpif(isset($_POST['usernamne'])){
+    <?php
+    if(isset($_POST['usernamne'])){
         $username = $_POST['username'];
         $password = $_POST['password'];
 
